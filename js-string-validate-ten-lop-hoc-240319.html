@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Ten Lop Hoc</title>
+</head>
+<body>
+<h5>Validate Ten Lop Hoc</h5>
+<script>
+    let regExp = /^C|A|P+[0-9]{4} +[G|H|I|K|L|M]$/;
+    let mang = ['C0318G','M0318G','P0323A','A2345K','I8796M'];
+    for(let i = 0; i < mang.length ; i++){
+        if(regExp.test(mang[i])){
+            console.log(mang[i] + ' Hop le !');
+            document.write(mang[i] + ' Hop le ! <br/><br/>');
+        }
+        else {
+            console.log(mang[i] + ' Khong Hop le !');
+            document.write(mang[i] + ' Khong Hop le ! <br/><br/>');
+        }
+    }
+</script>
+</body>
+</html>
